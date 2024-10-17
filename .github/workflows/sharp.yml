@@ -74,7 +74,7 @@ jobs:
       run: |
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
-        lunch twrp_X6837-eng && make clean && make vendorbootimage -j$(nproc --all)
+        lunch twrp_X6710-eng && make clean && make vendorbootimage -j$(nproc --all)
       working-directory: ${{ steps.pwd.outputs.workspace-folder }}
 
     - name: Upload Artifact
